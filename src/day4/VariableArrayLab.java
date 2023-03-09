@@ -9,6 +9,7 @@ public class VariableArrayLab {
     float[] farr = new float[3];
     double[] darr = new double[3];
     int[] arr3 = new int[]{1, 2, 3};
+    int[] arr4 = {1,2,3,4};
 
     public static void main(String[] args) {
         VariableArrayLab main = new VariableArrayLab();
