@@ -10,6 +10,13 @@ public class VariableArrayLab {
     double[] darr = new double[3];
     int[] arr3 = new int[]{1, 2, 3};
     int[] arr4 = {1,2,3,4};
+    int[][] arr5 = new int[3][5];
+    int arr6[][] = new int[3][5];
+
+    int arr7[][] = new int[][]{{1,2,3},{1,2,3},{1,2}};
+    int arr8[][][][][][][][][][] = new int[3][3][3][3][3][3][3][3][3][3];
+    //시간이 오래걸림
+//    int arr9[][][][][][][][][][][][][][][][][][][][] = new int[3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3][3];
 
     public static void main(String[] args) {
         VariableArrayLab main = new VariableArrayLab();
@@ -23,5 +30,10 @@ public class VariableArrayLab {
         System.out.println(barr[0]);
         System.out.println(farr[0]);
         System.out.println(darr[0]);
+        System.out.println(arr7[0][0] + " " + arr7[2][1]);
+        System.out.println(arr6[2][2]);
+        System.out.println("----");
+        System.out.println(arr8[0][0][0][2][2][2][2][1][1][1]);
+//        System.out.println(arr9[2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2][2]);
     }
 }
