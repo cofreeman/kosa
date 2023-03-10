@@ -15,7 +15,7 @@ public class MethodLab5 {
     }
 
     public static int getRandom(int n1, int n2) {
-        return (int) (Math.random() * (n2 - n1)) + n1;
+        return (int) (Math.random() * (n2 - n1 + 1)) + n1;
     }
 
 }
