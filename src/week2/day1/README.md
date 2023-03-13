@@ -32,4 +32,10 @@ https://inpa.tistory.com/entry/OOP-%EA%B0%9D%EC%B2%B4-%EC%A7%80%ED%96%A5-%ED%94%
 ### 4. 캡슐화
 # 인스턴스 
 
+#클래스 다이어그램 멤버들의 접근성 정의
+- '+' : public
+- '-' : private
+- '#' : protected
+- '생략' : default
+
 
