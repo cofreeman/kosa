@@ -30,7 +30,9 @@ OOP1보충.pdf 참조
 2. main 메서드가 실행되므로 Call Stack 에 main 메서드가 올라간다.
 3. main 메서드가 실행되고 Card 클래스가 참조 될 때 (Card class, cv)이 Method Area 에 로딩된다.
 4. skip
-#쓰레드
+#상속과 생성자
+A 클래스가 B 클래스를 상속받을 때 A 클래스를 생성하려면 B 클래스를 먼저 생성해야한다.
+super() 로 해결한다.
 
 
 
