@@ -1,0 +1,11 @@
+package week2.day4;
+
+import java.net.InetAddress;
+public class InetAddressTest {
+	public static void main(String[] args) throws Exception {
+		InetAddress inet = InetAddress.getLocalHost();
+		System.out.println(inet);
+		inet = InetAddress.getByName("www.naver.com");
+		System.out.println(inet);
+	}
+}
