@@ -21,7 +21,7 @@ public class TVTest {
     static void printAllTV(TV tv){
         System.out.print(tv);
         // 얘는 타입이 TV 인데 어떻게 자식의 toString() 메서드를 자동으로 참조하죠?
-
+        // answer: 자식의 클래스에서 toString() 을 오버라이딩 하고 있기 때문이다.
         if (tv instanceof  RentalTV){
             ((RentalTV) tv).play();
         }else if(tv instanceof SaleTV){

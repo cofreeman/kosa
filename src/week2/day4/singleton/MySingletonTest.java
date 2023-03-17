@@ -1,8 +1,9 @@
-package week2.day4;
+package week2.day4.singleton;
 
 class MySingleton {
 	private static MySingleton obj = new MySingleton();
-	private MySingleton() {		
+	private MySingleton() {
+
 	}
 	static MySingleton getMy() {
 		return obj;
