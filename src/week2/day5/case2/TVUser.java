@@ -1,4 +1,4 @@
-package week2.day4.case2;
+package week2.day5.case2;
 
 public class TVUser {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package week2.day4.case1;
+package week2.day5.case1;
 public class TVUser {
 	public static void main(String[] args) {
 		SamsungTV tv = new SamsungTV();
