@@ -1,4 +1,4 @@
-package week2.day4;
+package week2.day5;
 
 import java.util.Random;
 

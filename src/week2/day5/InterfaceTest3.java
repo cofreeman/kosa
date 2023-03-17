@@ -1,4 +1,4 @@
-package week2.day3;
+package week2.day5;
 
 interface InterCalculator {
 

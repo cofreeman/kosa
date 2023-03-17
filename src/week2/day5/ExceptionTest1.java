@@ -1,4 +1,4 @@
-package week2.day4;
+package week2.day5;
 public class ExceptionTest1 {
 	public static void main(String[] args) throws InterruptedException{
 		System.out.println("수행시작");
