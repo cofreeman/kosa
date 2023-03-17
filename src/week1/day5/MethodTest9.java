@@ -12,7 +12,7 @@ public class MethodTest9 {
 		printArray(p1);
 	}
 	
-	static void printArray(int[] p2) {
+	public static void printArray(int[] p2) {
 		for(int d : p2)
 			System.out.printf("%d ", d);
 		System.out.printf("\n");
