@@ -1,4 +1,4 @@
-package day12;
+package week3.day2;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 

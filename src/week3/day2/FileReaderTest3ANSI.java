@@ -1,16 +1,15 @@
 package week3.day2;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
-public class FileReaderTest3 {
+public class FileReaderTest3ANSI {
 	public static void main(String args[]) {
-		try (FileReader reader = new FileReader("/Users/choijungwoo/kosa/src/week3/day2");) {
+		try (FileInputStream fileInputStream = new FileInputStream("/Users/choijungwoo/kosa/src/week3/day2");
+			 InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream,"EUC-KR")) {
 			int data;
-			System.out.println(reader.getEncoding());
+			System.out.println(inputStreamReader.getEncoding());
 			while (true) {
-				data = reader.read();
+				data = inputStreamReader.read();
 				if (data == -1)
 					break;
 				System.out.print((char) data);
