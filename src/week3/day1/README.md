@@ -30,11 +30,12 @@ method 영역에는 타입 소거된 일반 클래스가 로드 되고 heap 영�
 그렇다면 일반 클래스 파일로 변환된 제네릭 클래스는 static 클래스가 될 수도 있고 static 변수또한 사용가능하다고 생각할 수 있다.
 
 하지만 이는 한가지 간과한것이 있다.
+```java
+//todo
+```
 
 위의 원리로 제네릭 클래스는 static class 가 될 수 없고 generic 한 static 변수 또한 사용 될 수 없다.
 
-
 # Collection API
 
-todo
 
