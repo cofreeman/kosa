@@ -34,4 +34,5 @@ Object 클래스 의 equals 는 주소비교다.
 
 주소비교를 하지않으려면 Object 클래스의 equals 를 오버라이드해서 사용하자
 # hashCode
+해시코드를 반환하는 메서드
 
