@@ -5,7 +5,7 @@ import java.util.Date;
 public class SerialTest2 {
    public static void main(String[] args) throws Exception{ 
       FileInputStream fis = 
-    		  new FileInputStream("c:/iotest/test1.ser"); 
+    		  new FileInputStream("/Users/choijungwoo/kosa/src/week3/day3/w3d3file.txt");
       ObjectInputStream ois = new ObjectInputStream(fis); 
       Date value1 = (Date)ois.readObject();
       Date value2 = (Date)ois.readObject();

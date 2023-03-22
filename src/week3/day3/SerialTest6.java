@@ -5,7 +5,7 @@ import java.io.ObjectInputStream;
 public class SerialTest6 {
    public static void main(String[] args) throws Exception{ 
       FileInputStream fis = 
-    		  new FileInputStream("c:/iotest/test3.ser"); 
+    		  new FileInputStream("/Users/choijungwoo/kosa/src/week3/day3/w3d3file.txt");
       ObjectInputStream ois = new ObjectInputStream(fis); 
       StepDTO dto = (StepDTO)ois.readObject();
       System.out.println("Student객체 데이터 : ");
