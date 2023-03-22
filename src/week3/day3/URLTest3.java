@@ -16,10 +16,10 @@ public class URLTest3 {
 		BufferedReader reader = null;
 		BufferedWriter fw = null;
 		try {
-			URL req = new URL("http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=1171062000");
+			URL req = new URL("http://www.kma.go.kr/wid/queryDFSRSS.jsp?zone=4117351000");
 			is = req.openStream();
 			reader = new BufferedReader(new InputStreamReader(is));
-			fw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("c:/iotest/weather.xml")));
+			fw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("/Users/choijungwoo/kosa/src/week3/day3/weather.xml")));
 			String lineStr = "";
 			while (true) {
 				lineStr = reader.readLine();

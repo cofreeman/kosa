@@ -17,7 +17,7 @@ public class URLTest2 {
 		try {
 			URL req = new URL("http://img.etnews.com/news_ebuzz/afieldfile/2012/01/04/c_bk010101_87984_3.jpg");
 			InputStream is = req.openStream();
-			String fileName = "c:/iotest/duke.jpg";
+			String fileName = "/Users/choijungwoo/kosa/src/week3/day3/duke.jpg";
 			FileOutputStream fos = new FileOutputStream(fileName);
 			int input = 0;
 			while (true) {

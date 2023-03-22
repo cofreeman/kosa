@@ -25,3 +25,21 @@ FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream, 그 �
 2. serialVersionUID 변수 생성(psfi)
 3. 기호에따라 멤버 변수에 static, transient 추가 
 
+# URL 프로그래밍
+> URL 클래스를 이용하는 프로그래밍(java.net)
+
+## URL(Uniform Resource Locator)
+> 자원을 식별할 수 있는 문자열
+
+### HTTP URL
+> 웹사이트의 주소 문자열
+
+### JDBC URL
+> 접속할 DB 서버와 JDBC 드라이버 정보를 정해진 규격으로 작성한 문자열
+
+## java.net.URL 클래스
+> 웹 서버에 접속하여 컨텐트를 요청하는 프로그램을 개발할 때
+
+
+
+

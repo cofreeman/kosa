@@ -33,3 +33,15 @@ this is readme
 
 - https://github.com/cofreeman/kosa/tree/main/src/week3/day5
 
+## week4
+- https://github.com/cofreeman/kosa/tree/main/src/week4/day1
+
+- https://github.com/cofreeman/kosa/tree/main/src/week4/day2
+
+- https://github.com/cofreeman/kosa/tree/main/src/week4/day3
+
+- https://github.com/cofreeman/kosa/tree/main/src/week4/day4
+
+- https://github.com/cofreeman/kosa/tree/main/src/week4/day5
+
+
