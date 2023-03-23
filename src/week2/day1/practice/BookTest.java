@@ -1,26 +1,5 @@
 package week2.day1.practice;
-class Book{
-    String title;
-    String author;
-    int price;
 
-    public Book() {
-        this.title = "이것이 자바다";
-        this.author = "신용권";
-        this.price = 36000;
-
-    }
-
-    public Book(String title, String author, int price) {
-        this.title = title;
-        this.author = author;
-        this.price = price;
-    }
-
-    public String getBookInfo(){
-        return title + " " + author + " " + price;
-    }
-}
 public class BookTest {
     public static void main(String[] args) {
         Book book1 = new Book("책1","저자1",10000);

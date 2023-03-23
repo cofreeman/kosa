@@ -1,4 +1,4 @@
-package week3.day3;
+package week3.day4;
 
 abstract class Test {
 	Test() {

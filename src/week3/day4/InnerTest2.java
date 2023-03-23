@@ -1,4 +1,4 @@
-package week3.day3;
+package week3.day4;
 
 class LocalTest {
 	String name = "Java";

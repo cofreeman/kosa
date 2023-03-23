@@ -1,4 +1,4 @@
-package week3.day3;
+package week3.day4;
 
 interface Testable {
 	final static String fs = "Interface Test";
