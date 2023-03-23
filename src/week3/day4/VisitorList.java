@@ -6,8 +6,8 @@ import java.sql.Statement;
 public class VisitorList {
 	public static void main(String[] args) throws Exception {
 		String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
-		String user = "jdbctest";
-		String passwd = "jdbctest";
+		String user = "root";
+		String passwd = "1234";
 		Connection conn = DriverManager.getConnection(url,user,passwd);
 		Statement stmt = conn.createStatement();
 		String sql = "SELECT id, name, writedate, memo FROM visitor";

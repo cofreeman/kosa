@@ -77,6 +77,8 @@ DCL(Data Control Language, 데이터 제어 언어)<br>
    반환 작업은 사용했던 객체를 역순으로 닫는다.
    rs.close(); stmt.close(); conn.close();
 
+## 주의점
+select * 쓰지마라 -> 가독성
 ## java 타입별 적정 db 데이터 타입
 ![img_1.png](img_1.png)
 
