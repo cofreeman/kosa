@@ -19,8 +19,8 @@ public class SelectImage {
 			return;
 		}
 		String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
-		String user = "jdbctest";
-		String passwd = "jdbctest";
+		String user = "root";
+		String passwd = "1234";
 		try (Connection conn = DriverManager.getConnection(url, user, passwd);
 				Scanner scan = new Scanner(System.in);
 				PreparedStatement pstmt = conn.prepareStatement("SELECT filename, imgcontent FROM imgtest WHERE filename = ?");) {
@@ -30,7 +30,7 @@ public class SelectImage {
 			ResultSet rs = pstmt.executeQuery();
 			if (rs.next()) {
 				String imgName[] = rs.getString("filename").split("\\.");	
-				File imgFile = new File("c:/Temp/"+imgName[0]+new Date().getTime()+"."+imgName[1]);
+				File imgFile = new File("/Users/choijungwoo/kosa/src/week3/day5/"+imgName[0]+new Date().getTime()+"."+imgName[1]);
 				InputStream is = rs.getBinaryStream("imgcontent");
 				FileOutputStream fos = new FileOutputStream(imgFile);
 				byte[] b = new byte[2048];

@@ -8,8 +8,8 @@ import java.sql.Statement;
 public class SearchEmp {
 	public static void main(String[] args) throws Exception {
 		String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
-		String user = "jdbctest";
-		String passwd = "jdbctest";
+		String user = "root";
+		String passwd = "1234";
 		Connection conn = DriverManager.getConnection(url, user, passwd);
 		Statement stmt = conn.createStatement();
 		ResultSet rs = stmt.executeQuery("select ename, job, sal, deptno  from emp where ename like '%T%'");

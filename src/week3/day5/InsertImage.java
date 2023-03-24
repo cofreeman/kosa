@@ -14,8 +14,8 @@ public class InsertImage {
 			return;
 		} 
 		String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
-		String user = "jdbctest";
-		String passwd = "jdbctest";
+		String user = "root";
+		String passwd = "1234";
 		try (Connection conn = DriverManager.getConnection(url, user, passwd);
 				Scanner scan = new Scanner(System.in);
 				PreparedStatement pstmt = conn.prepareStatement("INSERT INTO imgtest (filename, imgcontent) VALUES (?, ?)")){
