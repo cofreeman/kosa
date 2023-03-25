@@ -1,7 +1,7 @@
 # kosa
 this is readme
 ## week1
-- https://github.com/cofreeman/kosa/tree/main/src/week1/day1
+- [1주차 ]https://github.com/cofreeman/kosa/tree/main/src/week1/day1
 
 - https://github.com/cofreeman/kosa/tree/main/src/week1/day2
 
