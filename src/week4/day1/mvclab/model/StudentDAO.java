@@ -9,16 +9,18 @@ import java.util.List;
 public class StudentDAO {
     Connection conn = MySQLConnect.connect();
 
+
     public boolean insertStudent(StudentDTO dto) throws SQLException {
         PreparedStatement ps = conn.prepareStatement("insert into student values(?,?)");
         ps.setString(1, dto.getName());
         ps.setInt(2, dto.getScore());
         return (ps.executeUpdate() == 1);
+
     }
     public List<StudentDTO> getAllStudent() throws SQLException {
         ArrayList<StudentDTO> dtos = new ArrayList<StudentDTO>();
         PreparedStatement ps = conn.prepareStatement("select name, score from student");
-        ResultSet resultSet = ps.executeQuery();
+        ResultSet resultSet = ps.executeQuery(); 
         while(resultSet.next()){
             dtos.add(new StudentDTO(resultSet.getString("name"),resultSet.getInt("score")));
         }

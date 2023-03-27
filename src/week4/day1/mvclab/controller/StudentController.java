@@ -22,6 +22,9 @@ public class StudentController {
 
     public void insert(String name,int score) throws SQLException {
         boolean isStudentInserted = studentDAO.insertStudent(new StudentDTO(name, score));
+        StudentDAO studentDAO = new StudentDAO();
+
+
         System.out.println(isStudentInserted?"입력 성공":"입력 실패");
     }
 
