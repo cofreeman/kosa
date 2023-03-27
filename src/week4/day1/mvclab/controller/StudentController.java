@@ -12,7 +12,6 @@ public class StudentController {
     public void printAll() throws SQLException {
         List<StudentDTO> allStudent = studentDAO.getAllStudent();
         allStudent.forEach(System.out::println);
-        System.out.println();
     }
 
     public void printScore(String name) throws SQLException {

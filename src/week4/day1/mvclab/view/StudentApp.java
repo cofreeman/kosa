@@ -56,13 +56,13 @@ public class StudentApp {
     }
 
     private static void printMenus() {
-        System.out.println("처리하려는 기능을 선택하세요.");
+        System.out.println("\n처리하려는 기능을 선택하세요.");
         System.out.println("1. 학생 정보 출력");
         System.out.println("2. 학생 정보 입력");
         System.out.println("3. 학생 정보 삭제");
         System.out.println("4. 학생 정보 수정");
         System.out.println("5. 학생 정보 확인");
         System.out.println("6. 종료");
-        System.out.println("입력 : ");
+        System.out.print("입력 : ");
     }
 }
