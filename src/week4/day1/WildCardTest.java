@@ -33,25 +33,25 @@ public class WildCardTest {
 		System.out.println(p);
 	}
 	public static void main(String[] args) {
-		m1(new My<Date>(new Date()));
-		m1(new My<String>("abc"));
-		m1(new My<Integer>(100));
-		m1(new My<Person>(new Person()));
-		m1(new My<Worker>(new Worker()));
-		m1(new My<Student>(new Student()));
-		m1(new My<HighStudent>(new HighStudent()));
-		m1(new My<MiddleStudent>(new MiddleStudent()));
+		m1(new My<Date>(new Date()));		//Date객체임
+		m1(new My<String>("abc"));		//String객체임
+		m1(new My<Integer>(100));		//Integer객체임
+		m1(new My<Person>(new Person()));		//Person객체임
+		m1(new My<Worker>(new Worker()));		//Worker객체임
+		m1(new My<Student>(new Student()));		//Student객체임
+		m1(new My<HighStudent>(new HighStudent()));		//HighStudent객체임
+		m1(new My<MiddleStudent>(new MiddleStudent()));		//MiddleStudent객체임
 		System.out.println("-----------------------");
-		m2(new My<Student>(new Student()));
-		m2(new My<HighStudent>(new HighStudent()));
-		m2(new My<MiddleStudent>(new MiddleStudent()));
+		m2(new My<Student>(new Student()));  // Student 객체임
+		m2(new My<HighStudent>(new HighStudent()));  // HighStudent 객체임
+		m2(new My<MiddleStudent>(new MiddleStudent()));  // MiddleStudent 객체임
 		//m2(new My<>(100));
 		//m2(new My<>(new Person()));
 		//m2(new My<>(new Worker()));
 		System.out.println("-----------------------");		
-		m3(new My<Person>(new Person()));
-		m3(new My<Worker>(new Worker()));
-		m3(new My<Object>(new Object()));
+		m3(new My<Person>(new Person())); // Person 객체임
+		m3(new My<Worker>(new Worker())); // Worker 객체임
+		m3(new My<Object>(new Object())); // Object 객체임
 		//m3(new My<Student>(new Student()));
 		//m3(new My<HighStudent>(new HighStudent()));
 		//m3(new My<NewWorker>(new NewWorker()));

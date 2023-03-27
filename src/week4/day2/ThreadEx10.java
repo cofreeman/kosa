@@ -1,4 +1,4 @@
-package week4.day1;
+package week4.day2;
 
 public class ThreadEx10 {
 	public static void main(String[] args) {

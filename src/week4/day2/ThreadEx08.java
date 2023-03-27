@@ -1,33 +1,30 @@
-package week4.day1;
+package week4.day2;
 
-public class ThreadEx09 {
-	public static void main(String[] args) throws Exception {
+public class ThreadEx08 {
+	public static void main(String[] args) {
 		Thread mainThread = Thread.currentThread();
 		System.out.println("[ 프로그램 시작 스레드 이름 ] : " + mainThread.getName());
 		System.out.println("-------------------------------");
-		threadA2 threadA = new threadA2();
+		ThreadA threadA = new ThreadA();
 		System.out.println("작업 스레드 이름: " + threadA.getName());
 
-		threadB2 threadB = new threadB2("threadB2");
+		ThreadB threadB = new ThreadB("ThreadB");
 		System.out.println("작업 스레드 이름: " + threadB.getName());
 
-		threadC2 threadC = new threadC2();
+		ThreadC threadC = new ThreadC();
 		System.out.println("작업 스레드 이름: " + threadC.getName());
 		threadA.start();
 		threadB.start();
 		threadC.start();
-		threadA.join();
-		threadB.join();
-		threadC.join();
 
 		for (int i = 0; i < 3; i++)
 			System.out.println("프로그램 시작 스레드 이름: " + mainThread.getName());
 	}
 }
 
-class threadA2 extends Thread {
-	public threadA2() {
-		setName("threadA2");
+class ThreadA extends Thread {
+	public ThreadA() {
+		setName("ThreadA");
 	}
 
 	public void run() {
@@ -38,8 +35,8 @@ class threadA2 extends Thread {
 	}
 }
 
-class threadB2 extends Thread {
-	public threadB2(String name) {
+class ThreadB extends Thread {
+	public ThreadB(String name) {
 		super(name);
 	}
 
@@ -51,7 +48,7 @@ class threadB2 extends Thread {
 	}
 }
 
-class threadC2 extends Thread {
+class ThreadC extends Thread {
 	public void run() {
 		for (int i = 0; i < 2; i++) {
 			System.out.println(getName() + "가 출력한 내용");

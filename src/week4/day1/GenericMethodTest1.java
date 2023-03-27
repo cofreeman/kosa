@@ -23,13 +23,13 @@ public class GenericMethodTest1 {
 	}
 
 	public static void main(String[] args) {		
-		test1("가나다");
-		test1(new java.util.Date());
-		test1(100);
+		test1("가나다"); //String
+		test1(new java.util.Date()); //date
+		test1(100);  // integer
 		System.out.println("-----------------------");
-		System.out.println(test2("가나다"));
-		System.out.println(test2(new java.util.Date()));
-		System.out.println(test2(100));
+		System.out.println(test2("가나다"));   //string
+		System.out.println(test2(new java.util.Date())); // string
+		System.out.println(test2(100));  // string
 		System.out.println("-----------------------");
 		ArrayList<Date> l1 = test3(10);
 		l1.add(new Date());
