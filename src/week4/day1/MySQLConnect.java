@@ -7,8 +7,8 @@ public class MySQLConnect {
 		Connection conn = null;
 		try {		
 			String url = "jdbc:mysql://localhost:3306/edudb?characterEncoding=UTF-8&serverTimezone=UTC";
-			String user = "jdbctest";
-			String passwd = "jdbctest";
+			String user = "root";
+			String passwd = "1234";
 			conn = DriverManager.getConnection(url, user, passwd);						
 		} catch (Exception e) {
 			System.out.println("MYSQL 연결 실패");

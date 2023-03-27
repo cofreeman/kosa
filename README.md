@@ -94,9 +94,9 @@ IDE
 # 4주차
 
 ---
-| 일차  | 아이템                                                                            |learnd|
-|-----|--------------------------------------------------------------------------------|---|
-| 1일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day1) ||
+| 일차  | 아이템                                                                            | learnd    |
+|-----|--------------------------------------------------------------------------------|-----------|
+| 1일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day1) | DML, DDL, |
 | 2일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day2) ||
 | 3일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day3) ||
 | 4일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day4) ||
