@@ -73,30 +73,30 @@ IDE
 ---
 | 일차  | 아이템                                                                | learnd                       |
 |-----|--------------------------------------------------------------------|------------------------------|
-| 1일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week2/day1) | 객체지향, 클래스 다이어그램              |
-| 2일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week2/day2) | 변수와 메서드, 상속과 생성자             |
-| 3일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week2/day3) | 포함관계,오버라이딩, 다형성, abstract 키워드 |
-| 4일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week2/day4) | 인터페이스, 매개변수 다형성              |
-| 5일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week2/day5) | 예외처리                         |
+| 1일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week2/day1) | 객체지향, 클래스 다이어그램              |
+| 2일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week2/day2) | 변수와 메서드, 상속과 생성자             |
+| 3일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week2/day3) | 포함관계,오버라이딩, 다형성, abstract 키워드 |
+| 4일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week2/day4) | 인터페이스, 매개변수 다형성              |
+| 5일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week2/day5) | 예외처리                         |
 
 # 3주차
 
 ---
 | 일차  | 아이템                                                                            | learnd                                                                              |
 |-----|--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 1일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week3/day1)             | 제네릭, 제네릭과 static                                                                    |
-| 2일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week3/day2)             | Collections, Comparable interface,equals, hashcode,I/O Programming, try-with-resource |
-| 3일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week3/day3)             | Serialize, transient 키워드,URL 프로그래밍, Enum, javap 명령어                                 |
+| 1일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week3/day1)             | 제네릭, 제네릭과 static                                                                    |
+| 2일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week3/day2)             | Collections, Comparable interface,equals, hashcode,I/O Programming, try-with-resource |
+| 3일차 | [자바기초](https://github.com/cofreeman/kosa/tree/main/src/week3/day3)             | Serialize, transient 키워드,URL 프로그래밍, Enum, javap 명령어                                 |
 | 4일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week3/day4) | Inner Class, JDBC Programming                                                       |
 | 5일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week3/day5) | SQL with JDBC Programming, MySQL                                                    |
 
 # 4주차
 
 ---
-| 일차  | 아이템                                                                |learnd|
-|-----|--------------------------------------------------------------------|---|
-| 1일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week4/day1) ||
-| 2일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week4/day2) ||
-| 3일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week4/day3) ||
-| 4일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week4/day4) ||
-| 5일차 | [자바기본](https://github.com/cofreeman/kosa/tree/main/src/week4/day5) ||
+| 일차  | 아이템                                                                            |learnd|
+|-----|--------------------------------------------------------------------------------|---|
+| 1일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day1) ||
+| 2일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day2) ||
+| 3일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day3) ||
+| 4일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day4) ||
+| 5일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day5) ||
