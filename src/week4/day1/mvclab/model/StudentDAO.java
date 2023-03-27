@@ -30,7 +30,7 @@ public class StudentDAO {
         ps.setString(1,dto.getName());
         ResultSet resultSet = ps.executeQuery();
         if (resultSet.next()) return resultSet.getInt("score");
-        else throw new SQLException();
+        else return -1;
     }
 
     public boolean updateStudent(StudentDTO dto) throws SQLException {

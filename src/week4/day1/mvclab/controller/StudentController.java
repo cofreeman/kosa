@@ -16,6 +16,7 @@ public class StudentController {
 
     public void printScore(String name) throws SQLException {
         int score = studentDAO.getScore(new StudentDTO(name));
+        if (score < 0) System.out.printf("%s 학생은 존재하지 않습니다.\n",name);
         System.out.printf("%s 학생의 점수는 %d 입니다.\n",name,score);
     }
 
