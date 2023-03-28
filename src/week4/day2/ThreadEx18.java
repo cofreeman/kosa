@@ -1,6 +1,15 @@
 package week4.day2;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 class FamilyThread extends Thread {
+	public static void main(String[] args) {
+		ArrayList<Object> objects = new ArrayList<>();
+		List<Object> objects1 = Collections.synchronizedList(objects);
+
+	}
 	private Washroom wr;
 	private String who;
 
@@ -20,7 +29,7 @@ class FamilyThread extends Thread {
 }
 
 class Washroom {
-	public void openDoor(String name) throws InterruptedException {
+	public synchronized void openDoor(String name) throws InterruptedException {
 		System.out.println(name + "님이 입장");
 		for (int i = 0; i < 50000; i++) {
 			if (i % 10000 == 0) {
