@@ -1,4 +1,4 @@
-package week4.day2;
+package week4.day3;
 
 @FunctionalInterface
 interface MyFunctionalInterface6 {

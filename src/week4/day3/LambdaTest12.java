@@ -1,4 +1,4 @@
-package week4.day2;
+package week4.day3;
 
 interface ActionExpression {
 	void exec(Object... param);
@@ -9,31 +9,31 @@ interface FuncExpression<T> {
 }
 
 public class LambdaTest12 {
-	public static void Test1(ActionExpression action) {
+	public static void test1(ActionExpression action) {
 		action.exec("hello world");
 	}
 
-	public static void Test2(FuncExpression<String> func) {
+	public static void test2(FuncExpression<String> func) {
 		String ret = func.exec("hello world");
 		System.out.println(ret);
 	}
 
 	public static void main(String[] args) throws Exception {
-		Test1(new ActionExpression() {
+		test1(new ActionExpression() {
 			public void exec(Object... data) {
 				System.out.println("Test1 - " + data[0]);
 			}
 		});
-		Test2(new FuncExpression<String>() {
+		test2(new FuncExpression<String>() {
 			public String exec(Object... data) {
 				System.out.println(data[0]);
 				return "OK1";
 			}
 		});
 
-		Test1((Object... data) -> System.out.println("Test2 - " + data[0]));
+		test1((Object... data) -> System.out.println("Test2 - " + data[0]));
 
-		Test2((Object... data) -> {
+		test2((Object... data) -> {
 			System.out.println(data[0]);
 			return "OK2";
 		});
