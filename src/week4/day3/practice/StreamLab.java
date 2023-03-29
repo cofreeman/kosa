@@ -2,6 +2,7 @@ package week4.day3.practice;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.stream.IntStream;
 
 class Trainee {
     private final String name;
@@ -60,6 +61,9 @@ public class StreamLab {
         // 모든 문제들은 위의 배열 객체를 가지고 스트림 객체를 만든 다음에 해결한다.
         // (1) Trainee 객체들을 화면에 출력한다.
         Arrays.stream(sa).forEach(System.out::println);
+        System.out.println("ewew");
+        IntStream.range(1, 10).peek(i -> System.out.println(i * 1000)).filter(i -> i > 5).forEach(System.out::println);
+        System.out.println("ewew");
         System.out.println();
         // (2) 성적이 높은 순으로 Trainee 객체들을 화면에 출력한다.
         Arrays.stream(sa).sorted(Comparator.comparingInt((Trainee::getScore)).reversed()).forEach(System.out::println);
