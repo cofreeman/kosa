@@ -94,10 +94,28 @@ IDE
 # 4주차
 
 ---
-| 일차  | 아이템                                                                            | learnd                                                             | 실습                                                                      |
-|-----|--------------------------------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------|
-| 1일차 | [자바 API](https://github.com/cofreeman/kosa/tree/main/src/week4/day1)           | DML, DDL, 와일드카드 타입 파라미터                                            | [실습](https://github.com/cofreeman/kosa/tree/main/src/week4/day1/mvclab) |
-| 2일차 | [자바 API](https://github.com/cofreeman/kosa/tree/main/src/week4/day2)           | 멀티스레드 프로그래밍, synchronized 키워드, 동기화 된 컬렉션, 람다, 함수형 프로그래밍, 함수형 인터페이스 | [실습1](https://github.com/cofreeman/kosa/tree/main/src/week4/day2/practice) [실습2](https://github.com/cofreeman/kosa/tree/main/src/week4/day2/lamdalab) |
-| 3일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day3) |||
-| 4일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day4) |||
-| 5일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day5) |||
+| 일차  | 아이템                                                                                  | learnd                                                             | 실습                                                                                                                                                                                                                                                                                                                         |
+|-----|--------------------------------------------------------------------------------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1일차 | [자바 API](https://github.com/cofreeman/kosa/tree/main/src/week4/day1)                 | DML, DDL, 와일드카드 타입 파라미터                                            | [실습](https://github.com/cofreeman/kosa/tree/main/src/week4/day1/mvclab)                                                                                                                                                                                                                                                    |
+| 2일차 | [자바 API](https://github.com/cofreeman/kosa/tree/main/src/week4/day2)                 | 멀티스레드 프로그래밍, synchronized 키워드, 동기화 된 컬렉션, 람다, 함수형 프로그래밍, 함수형 인터페이스 | [실습1](https://github.com/cofreeman/kosa/tree/main/src/week4/day2/practice) [실습2](https://github.com/cofreeman/kosa/tree/main/src/week4/day2/lamdalab)                                                                                                                                                                      |
+| 3일차 | [JDBC Programming](https://github.com/cofreeman/kosa/tree/main/src/week4/day3)       | 람다식 메서드 참조, Functional Interface 가변인자, 스트림                         | [실습](https://github.com/cofreeman/kosa/tree/main/src/week4/day3/practice)                                                                                                                                                                                                                                                  |
+| 4일차 | [JDBC Programming, 웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week4/day4) | 인터넷 프로토콜, WWW, URL, URI                                            ||
+| 5일차 | [웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week4/day5)                   | HTML5, HTML5 tag, DOM 개념                                           | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/calcForm.html) [실습2](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/homework1.html) [실습3](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/visitorForm.html) [실습4](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/cssexam/csslab1.html) |
+
+# 5주차
+
+[//]: # (---)
+
+[//]: # (| 일차  | 아이템                                                                                  | learnd                                                             | 실습                                                                      |)
+
+[//]: # (|-----|--------------------------------------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------------------------|)
+
+[//]: # (| 1일차 | [자바 API]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day1&#41;                 | DML, DDL, 와일드카드 타입 파라미터                                            | [실습]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day1/mvclab&#41; |)
+
+[//]: # (| 2일차 | [자바 API]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day2&#41;                 | 멀티스레드 프로그래밍, synchronized 키워드, 동기화 된 컬렉션, 람다, 함수형 프로그래밍, 함수형 인터페이스 | [실습1]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day2/practice&#41; [실습2]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day2/lamdalab&#41; |)
+
+[//]: # (| 3일차 | [JDBC Programming]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day3&#41;       |||)
+
+[//]: # (| 4일차 | [JDBC Programming, 웹 개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day4&#41; |||)
+
+[//]: # (| 5일차 | [웹 개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week4/day5&#41;                   |||)
