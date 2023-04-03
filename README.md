@@ -106,10 +106,14 @@ IDE
 
 ---
 
-|일차| 아이템      |learnd| 실습      |
-|-----|----------|---|---------|
-|1일차| [웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day1) | CSS, JavaScript | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/homework2.html) |
-|2일차||||
-|3일차||||
-|4일차||||
-|5일차||||
+|일차| 아이템                                                                |learnd| 실습      |
+|-----|--------------------------------------------------------------------|---|---------|
+|1일차| [웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day1) | CSS, JavaScript | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/homework2.html) [실습2](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exercise1.html) [실습3](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exercise2.html)|
+
+[//]: # (|2일차| [웹개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week5/day2&#41;  |||)
+
+[//]: # (|3일차| [웹개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week5/day3&#41;  |||)
+
+[//]: # (|4일차| [웹개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week5/day4&#41;  |||)
+
+[//]: # (|5일차| [웹개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week5/day5&#41;  |||)
