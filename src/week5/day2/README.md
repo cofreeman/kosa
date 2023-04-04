@@ -62,4 +62,52 @@ var ary3 = [30, 11, 5, 27, 9]
 document.write(ary3.sort(function(a, b){ return a - b;}) + "<br>");
 ````
 
+## Date 타입
+일요일이 0 이다.
+
+## foreach
+> 자바스크립트는 객체를 순회할 떄 값이 아니라 인덱스를 가져온다.  
+````javascript
+for (var i in list) {
+    writeNewLine(list[i]);
+    // i는 0,1,2,3... 이다. 
+}
+````
+
+## 가변 함수(+ 가변 arguments 함수)
+> 자바스크립트에서 가변 인자함수(variadic function)는 매개변수의 개수가 가변적인 함수를 말합니다. 
+> 즉, 함수를 호출할 때 매개변수의 개수를 지정하지 않고, 여러 개의 값을 인자로 전달할 수 있습니다.
+```javascript
+function out() {
+	document.write("아규먼트 갯수 : "+arguments.length+"<br>");
+	for(var i=0; i < arguments.length; i++) 
+		console.log(arguments[i]);
+	console.log('-----------------------');
+}
+// arguments 인자는 
+function out(...p) {
+  document.write("아규먼트 갯수 : "+p.length+"<br>");
+  for(var i=0; i < p.length; i++)
+    console.log(p[i]);
+  console.log('-----------------------');
+}
+out();
+out(10); 
+out(10,20); 
+out('a', 'b', 'c'); 
+out(1,2,3,4,5,6,7,8);
+```
+
+## 이중Function
+````javascript
+function outerFunction() {
+    return function () {
+        document.write('<H1>Hello World .. !</h1>');
+    };
+}
+outerFunction( )( ); // 리턴된 함수를 즉시 실행
+````
+
+
+
 
