@@ -106,11 +106,11 @@ IDE
 
 ---
 
-|일차| 아이템                                                                | learnd                                   | 실습                                                                                                                                                                                                                    |
-|-----|--------------------------------------------------------------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|1일차| [웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day1) | CSS, JavaScript                          | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/homework2.html) [실습2](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday1)               |
-|2일차| [웹개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day2)  | pre  태그, JavaScript(배열, 함수, 가변 함수, date) | [실습1(3,4,5)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday2) [실습2(6,7,7_1,8)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday2) |
-|3일차| [웹개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day3)  | JavaScript(객체,객체 생성, prototype, )        | [실습1(9,10)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday3)|
+|일차| 아이템                                                                | learnd                                                  | 실습                                                                                                                                                                                                                    |
+|-----|--------------------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1일차| [웹 개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day1) | CSS, JavaScript                                         | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/htmlexam/homework2.html) [실습2](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday1)               |
+|2일차| [웹개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day2)  | pre  태그, JavaScript(배열, 함수, 가변 함수, date)                | [실습1(3,4,5)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday2) [실습2(6,7,7_1,8)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday2) |
+|3일차| [웹개발](https://github.com/cofreeman/kosa/tree/main/src/week5/day3)  | JavaScript(객체,객체 생성, prototype),BOM(개념,사용법),DOM(개념,사용법) | [실습1(9,10)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday3)|
 
 [//]: # (|4일차| [웹개발]&#40;https://github.com/cofreeman/kosa/tree/main/src/week5/day4&#41;  |||)
 
