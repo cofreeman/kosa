@@ -91,3 +91,45 @@ prototype o -> 같은 타입의 멤버에서 미리 메모리에 할당된 속�
     var st3 = new Student('도우너', 76, 96, 94, 90);
 </script>
 ```
+
+## BOM(Browser Object Model)
+> JavaScript 로 브라우저 또한 조작이 가능하다.
+
+![img.png](img.png)
+location.href 현재 웹페이지의 url 정보인데 이 정보를 변경하면 웹 페이지 이동을 한다. 
+iframe 태그는 하나의 window 객체를 생성한다.
+
+## DOM(Document Object Model)
+> 객체 지향 모델로써 구조화된 문서를 표현하는 형식이다.
+
+브라우저는 서버로부터 응답된 웹 컨텐트 내용을 파싱한 후 트리구조로 각 HTML 태그마다 DOM 기술을 적용하여 JavaScript 객체를 생성하는데 이 객체들을 DOM 객체라 한다.
+
+DOM 객체를 통해서 HTML 문서의 내용에 접근하여 crud 를 할 수 있다.
+
+그렇다면 javascript 가 읽을 수 있는 DOM 객체로 변환된 HTML 페이지를 BOM 객체 중 document 객체를 통해  조작하는것인가?
+정답 : o
+
+### DOM 객체 접근
+DOM 객체를 접근할 때는 **직접 접근 방법**과 **노트 워킹 접근 방법**이 사용될 수 있다.
+
+### 직접접근방법
+원하는 DOM 객체에 접근하기 위해서는 document 객체에서 제공되는 다음 메서드들을 사용한다.
+- document.getElementsByTagName('태그명') 태그명으로 DOM 객체들을 찾음 -> NodeList
+- document.getElementById ('id속성값') 태그에 정의된 id 속성의 값으로 DOM 객체를 찾음 -> Node
+- document.getElementsByClassName('class속성값') 태그에 정의된 class 속성의 값으로 DOM 객체들을 찾음 ->NodeList
+- document.querySelector('#id, #class,#') 선택자에 알맞은 DOM 객체를 찾음 -> Node
+- document.querySelectorAll('#찾고자 하는 DOM 객체에대한 CSS 선택자') 선택자에 알맞은 DOM 객체들을 찾음 -> NodeList
+- 문자열로 정의된 엘리먼트의 컨텐트 내용을 추출하려면 node.nodeValue를 사용한다.
+- 문자열로 정의된 엘리먼트의 컨텐트 내용을 추출하려면 node.textContent 사용한다.
+- 종류에 관계없이 엘리먼트의 컨텐트 내용을 추출하려면 node.innerHTML 을 사용한다.
+- 엘리먼트에 정의된 속성을 접근하기 위해서는 node.getAttribute('속성명')을 사용한다.
+### 노트 워킹 접근 방법
+
+
+### 이벤트 처리
+window.onload() = 
+?????
+노트 워킹 접근 방법
+함수 선언식과 호이스팅, 함수 표현식
+/Users/choijungwoo/dkDynamicWebApp/src/main/webapp/jsexam/apiexam/exam7_2.html 는 함수 표현식인가 함수 선언식인가
+????
