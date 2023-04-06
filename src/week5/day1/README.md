@@ -91,9 +91,60 @@ JavaScript는 데이터 타입이 number, string, boolean, null, undefined 로 �
 
 ## API
 - isNaN() : 숫자로 변경될 수 없으면 true
-## var,let
-let : block scope 를 지원한다.
+## var, let, const
+> 둘 다 변수를 선언하는 키워드이다.
 
+### var
+var 은 ES5 전에 사용되었으며 함수 스코프를 가집니다.
+```js
+function foo(){
+    var i = 0;
+    console.log(i); // 0
+}
+console.log(i); // i is not defined
+```
+하지만 단점이 있습니다. 
+```js
+var i = 0;
+var i = 1;
+```
+변수 재선언이 가능하다는 것입니다.<br>
+또한 예기치 않은 변수 호이스팅이나 스코프 오염이 발생될 수 있습니다.<br>
+아래 예제는 var 의 스코프가 함수라서 예기치 않은 호이스팅이 일어난 예시입니다.
+````js
+// 예시1. 예기치 않은 호이스팅으로 인한 오류
+function func(){
+    console.log(x); // undefined
+    if (true){
+        var x = 10;
+    }
+    console.log(x); // 10
+}
+func();
+````
+요약: var 의 특성인 변수 재선언 가능과 함수 스코프 범위, JavaScript 엔진의 호이스팅이 결합되어 개발자들이 예상하지 못한 많은 오류가 발생하고 프로그램이 불안정해집니다.<br>
+그래서 이를 해결하기위해 나온것이 let 키워드 입니다.
+### let
+ES6 때 도입된 키워드로 블럭 스코프를 가집니다.<br>
+let 은 동일한 이름의 변수를 재선언 할 수 없습니다.<br>
+다음은 var 을 써서 발생한 오류1을 let 을 씀으로써 해결하는 예시입니다.
+```js
+// 예시1. var 를 썼을때 예기치 않은 호이스팅으로 발생한 오류를 let 을 씀으로써 해결
+function func(){
+    console.log(x); // x is not defined
+    if (true){
+        let x = 10;
+    }
+    console.log(x); // 첫번째 console.log(x) 오류로 실행이 안되지만 위에 거를 지운다면 여기 또한 x is not defined 
+}
+func();
+```
+### const
+const 는 상수입니다. 변경하려하면 오류가 발생합니다.
+```js
+const i = 0;
+i = 1; // error
+```
 
 ## 서브창 출력
 window.alert() : 경고창을 통해서 메시지를 알리는 서브창 출력<br>
@@ -103,11 +154,3 @@ window.prompt() : 필요한 데이터를 입력받는 역할의 서브창 출력
 (취소버튼이 클릭되면 --> null )<br>
 
 window.confirm() : 양자 택일을 선택할 수 있는 역할의 서브창 출력<br>
-
-
-
-
-
-?????
-var, let let 이 나온 이유?
-?????
