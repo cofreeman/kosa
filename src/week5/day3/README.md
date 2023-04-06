@@ -132,4 +132,5 @@ window.onload() =
 노트 워킹 접근 방법
 함수 선언식과 호이스팅, 함수 표현식
 /Users/choijungwoo/dkDynamicWebApp/src/main/webapp/jsexam/apiexam/exam7_2.html 는 함수 표현식인가 함수 선언식인가
+
 ????
