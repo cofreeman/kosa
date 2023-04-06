@@ -149,6 +149,7 @@ hello();
 
 function hello() {
   console.log('Hello, world!');
+  var x = 1;
 }
 ```
 위의 예제에서는 JavaScript 엔진이 작동할 때 호이스팅을 거쳐서 다음과 같이 변환됩니다.
@@ -156,7 +157,9 @@ function hello() {
 var x;
 
 function hello() {
-  console.log('Hello, world!');
+    var x;
+    console.log('Hello, world!');
+    x = 1;
 }
 
 console.log(x); // undefined
