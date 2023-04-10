@@ -113,3 +113,19 @@ IDE
 |3일차| [JavaScript](https://github.com/cofreeman/kosa/tree/main/src/week5/day3)       | JavaScript(객체,객체 생성, prototype),BOM(개념,사용법),DOM(개념,사용법)                    | [실습1(9,10)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday3)|
 |4일차| [JavaScript](https://github.com/cofreeman/kosa/tree/main/src/week5/day4)       | JavaScript(이벤트 모델 정의,이벤트 모델에 이벤트 연결하는 법, 이벤트 핸들러 함수의 인자, 이벤트 버블링과 이벤트 캡처링) | [실습1(11_1,11_2,11_3,12)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday4) [실습1(13)](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday4) |
 |5일차| [JavaScript](https://github.com/cofreeman/kosa/tree/main/src/week5/day5) | JavaScript(이벤트 전달 과정), Canvas API, Drag and Drop API, Web Storage API       ||
+
+# 5주차
+
+---
+
+|일차| 아이템                                                                                                           | learnd                                                                    | 실습                                                                                                                                                                                                                    |
+|-----|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1일차| [JSON & AJAX MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day1) |||
+
+[//]: # (|2일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day2&#41;             |||)
+
+[//]: # (|3일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day3&#41;             |||)
+
+[//]: # (|4일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day4&#41;             |||)
+
+[//]: # (|5일차| [Spring FW 기초]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day5&#41;                                    |||)
