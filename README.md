@@ -118,11 +118,10 @@ IDE
 
 ---
 
-|일차| 아이템                                                                                                           | learnd                | 실습                                                                                                |
-|-----|---------------------------------------------------------------------------------------------------------------|-----------------------|---------------------------------------------------------------------------------------------------|
-|1일차| [JSON & AJAX MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day1) | AJAX,XML,JSON,Map API | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday6) |
-
-[//]: # (|2일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day2&#41;             |||)
+|일차| 아이템                                                                                                           | learnd                                          | 실습                                                                                                |
+|-----|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------------------------------|
+|1일차| [JSON & AJAX MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day1) | AJAX,XML,JSON,Map API                           | [실습1](https://github.com/cofreeman/dkDynamicWebApp/blob/main/src/main/webapp/jsexam/exerciseday6) |
+|2일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day2)             | ES6 문법, Java EE, Servlet(특징, 사용법, 등장배경, 요청 재지정) | [실습1(소스34.zip)](https://github.com/cofreeman/kosa/blob/main/src/week6/day2)                       |
 
 [//]: # (|3일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5]&#40;https://github.com/cofreeman/kosa/tree/main/src/week6/day3&#41;             |||)
 
