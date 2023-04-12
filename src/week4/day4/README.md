@@ -25,7 +25,7 @@ ___
 > 인터넷상의 정보를 하이퍼텍스트 방식과 멀티미디어 환경에서 검색할 수 있게 해주는 정보검색 시스템이다.
 
 ## URL, URI, URN
-> URI (Uniform Resource Identifier) : 자원의 식별자
+> URI (Uniform Resource Identifier) : 자원의 식별자<br>
 > URL (Uniform Resource Locator) : 자원의 위치
 
 URI는 Uniform Resource Identifier의 약자로, 인터넷에서 고유한 리소스를 식별하는 일반적인 용어입니다. URI는 리소스를 식별하기 위해 사용되며, 이를 통해 인터넷 프로토콜을 통해 접근 가능한 모든 리소스를 식별합니다.
@@ -52,7 +52,3 @@ ___
 # IntelliJ Artifact
 > Artifact 란 IntelliJ IDEA 내에서 Java 프로그램을 jar 파일로 뽑아낼 때, 
 해당 jar 파일에 어떤 내용이 포함될 것인지, 어디에 저장될 것인지를 정하는 기능
-
-?????????
-사용자와 서버의 통신과정을 설명
-?????????

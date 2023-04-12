@@ -32,7 +32,9 @@ var myFunction = function(인자){
 
 ### 함수 활용예시 
 자바스크립트는 함수를 일반 변수처럼 다룰 수 있다.
+
 ![img.png](img.png)
+
 리턴값이 없는 함수는 undefined 형태가 된다.
 
 # JavaScript 의 배열

@@ -65,7 +65,9 @@ Servlet 은 HttpServlet 이라는 클래스를 상속하여 구현한다.<br>
 어떠한 요청 방식을 지원하는 Servlet 인가에 따라 doGet() 또는 doPost() 메서드를 오버라이딩하여 구현한다.<br>
 HttpServletRequest request 은 요청 관련된 처리<br>
 HttpServletResponse response 은 응답 관련된 처리를 할 때 사용된다.<br>
-writer.print("<a href='"+req.getHeader("referer")+"'>입력화면으로 가기</a>");을 사용하여 이전화면으로 갈 수 있다.<br>
+````js
+writer.print("<a href='"+req.getHeader("referer")+"'<입력화면으로 가기</a>");을 사용하여 이전화면으로 갈 수 있다.<br>
+````
 
 
 ### Servlet 의 메서드
@@ -89,15 +91,63 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 }
 ```
 
-## Servlet 의 요청 재지정
-forward 는 같은 어플리케이션에서만 redirect가 가능하다.
+# Servlet 의 요청 재지정
+> 클라이언트가 요청한 페이지 대신 다른 페이지를 보게하는 방법
 
-???????
-servlet은 HttpServlet 을 구현하여 구현하는데 이 구조를 알고싶다.
-서블릿은 객체가 한 번 생성된다. -> 한 번 진짜 그러나 보자
-서블릿객체는 jvm 에서 어디에 올라가는가
-여기서 서블릿 객체란 HttpServlet을 구현 한 객체를 말하는 것인가?
-물건을 담을 때 세션에 담는데 세션은 언제 생성되고 없어지는가?
-세션은 jvm 중 어디에 생성되는가?
-getHeader(referrer)은 뭔가
-??????
+# forward
+> 동일한 요청상에서 다른 자원에게 요청을 넘겨서 대신 응답하게 함
+
+![img_2.png](img_2.png)
+## 특징
+1. 동일한 서버의 동일한 어플리케이션일 경우에만 사용 가능하다.(다른 서버거나 다른 웹 어플리케이션이면 요청을 하는것이 불가능하기 때문)
+2. 브라우저에 표기되는 주소 필드의 URL 이 바뀌지 않음
+3. 두 자원이 HttpServletRequest, HttpServletResponse 객체를 공유한다.
+## 예시
+```java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("ForwardServlet 수행");
+		RequestDispatcher rd = 
+				request.getRequestDispatcher("/clientexam/output.html");
+		rd.forward(request,  response);
+	}
+```
+# redirect
+> 사용자에게 다른 자원을 요청하게 한다.<br>
+
+![img_3.png](img_3.png)
+## 특징
+1. Web 상의 모든 페이지로 요청 재지정가능
+2. 브라우저의 주소필드의 URL 이 바뀜
+3. 두 자원이 HttpServletRequest, HttpServletReqsponse  객체를 공유하지 않음
+4. 두 번의 요청-응답 사이클로 인해 forward 방식보다 네트워크 지연시간이 더 많이 소요된다.
+
+## 예시
+```java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("RedirectServlet 수행");
+		response.sendRedirect("/edu/clientexam/output.html");
+	}
+```
+
+### forward 방식을 사용할 수 있는 경우에도 redirect 를 사용해야만 하는 경우 또는 redirect를 사용하는 것이 좋은 경우
+sendRedirect는 URL 변경, 새로 고침 등의 이유로 사용자 경험이나 기능적인 측면에서 필요한 경우가 있습니다.
+예를 들어 브라우저 주소창의 URL 변경이 필요한 경우, 새로 고침에 의한 중복 요청 방지 같은 경우입니다.
+따라서 상황에 따라 적절한 방식을 선택하는 것이 중요합니다.
+
+### 서블릿 메서드 접근 제어자 protected 인 이유
+1. 상속: HttpServlet 클래스를 상속받아 사용자 정의 서블릿 클래스를 생성할 때, doPost과 doGet 메서드를 오버라이드(재정의)하여 사용합니다. 
+접근 제어자가 protected인 경우, 상속받은 클래스에서 해당 메서드에 접근할 수 있습니다. 
+만약 private이었다면, 서브 클래스에서 메서드에 접근할 수 없어 오버라이드를 할 수 없습니다.
+2. 생명 주기 관리: 서블릿 컨테이너는 서블릿의 생명 주기를 관리합니다.
+이 과정에서 컨테이너는 service 메서드를 호출하고, service 메서드는 요청 방식에 따라 doGet이나 doPost를 호출합니다. 
+접근 제어자가 protected인 경우, 서블릿 컨테이너가 정상적으로 생명 주기를 관리할 수 있습니다.
+만약 public이었다면, 외부에서도 직접 호출할 수 있어 서블릿 컨테이너의 관리 범위를 벗어날 수 있습니다.
+
+### getHeader("referer")
+getHeader("referer") 메서드는 HttpServletRequest 객체에서 사용되며, 클라이언트가 이전에 방문한 페이지의 URL을 가져옵니다.<br> 
+"Referer" 헤더는 웹 브라우저에서 요청이 전송될 때 자동으로 설정되며, 사용자가 클릭한 링크나 페이지 이동 버튼을 통해 현재 페이지로 이동한 경우에 사용됩니다.<br>
+
+### serialVersionUID
+serialVersionUID는 클래스 버전을 식별하는데 사용되며, 직렬화와 역직렬화 과정에서 해당 클래스의 버전이 일치하는지 확인하는데 사용됩니다.<br> 
+이렇게 함으로써 버전이 다른 클래스를 역직렬화할 때 문제가 발생하는 것을 방지할 수 있습니다.<br>
+

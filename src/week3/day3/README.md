@@ -11,10 +11,10 @@ FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream, 그 �
 **3. non-static, non-transient 멤버 변수들만 직렬화 대상이 된다.(할 필요가 없다.)**<br>
 직렬화 시에 직렬화에서 제외되는 멤버변수를 선언하 고자 할 때 사용되는 변수 제어자가 바로 transient 키워드이다.<br>
 **4. 메서드도 같은 원리로 직렬화 할 필요가 없다.(할 필요가 없다.)** <br>
-**5. 직렬화의 대상이 되는 멤버 변수가 참조형일 때는 참조하는 객체도 직렬화 가능한 객체여야 한다. 그렇지 않 으면 실행 시 NotSerializableException이 발생된다.**
+**5. 직렬화의 대상이 되는 멤버 변수가 참조형일 때는 참조하는 객체도 직렬화 가능한 객체여야 한다. 그렇지 않으면 실행 시 NotSerializableException이 발생된다.**
 
 ## transient 와 직렬화
-직렬화 하고 싶지 않은 멤버 변수에 transient 키워드를 붙히면 해당 변수는 직렬화에서 제외도니다.
+직렬화 하고 싶지 않은 멤버 변수에 transient 키워드를 붙히면 해당 변수는 직렬화에서 제외된다.
 그렇다면 역직렬화 시에 transient 변수는 어떻게 주입되는가? 리플렉션? 아니면 컴파일러가 transient 변수를 제외한 생성자를 만들어주는가?
 둘 다 아니다.
 
