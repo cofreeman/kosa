@@ -45,6 +45,7 @@ Java EE는 대규모 기업용 애플리케이션 개발에 적합한 플랫폼�
 
 # 웹 어플리케이션의 디렉토리 구조
 ![img_1.png](img_1.png)
+
 # Servlet(Server Side Applet)
 > Servlet은 Java 언어로 작성된 웹 어플리케이션의 일부로서, HTTP 요청과 응답 프로토콜을 처리하는 Java 클래스입니다.
 
