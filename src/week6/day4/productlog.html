@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        img{
+            padding: 2%;
+            border: black;
+        }
+        textarea{
+            background-color: #2c6da0;
+            border-radius: 50px;
+        }
+        div{
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+            background-color: #2c6da0;
+        }
+    </style>
+</head>
+<body>
+    <h1>원하는 상품을 클릭해 주세요!! 마구마구^^</h1>
+    <hr>
+    <img class = "product" src="images/1.jpg" width="15%" data-id = "p001">
+    <img class = "product" src="images/2.jpg" width="15%" data-id = "p002">
+    <img class = "product" src="images/3.jpg" width="15%" data-id = "p003">
+    <img class = "product" src="images/4.jpg" width="15%" data-id = "p004">
+    <img class = "product" src="images/5.jpg" width="15%" data-id = "p005">
+    <img class = "product" src="images/6.jpg" width="15%" data-id = "p006">
+    <img class = "product" src="images/7.jpg" width="15%" data-id = "p007">
+    <img class = "product" src="images/8.jpg" width="15%" data-id = "p008">
+    <img class = "product" src="images/9.jpg" width="15%" data-id = "p009">
+    <img class = "product" src="images/10.jpg" width="15%" data-id = "p010">
+    <div id="basket"> </div>
+<script>
+    const images = document.querySelectorAll('.product');
+    const basketList = document.getElementById('basket');
+    let basket = {};
+
+    images.forEach(function(image) {
+        image.addEventListener('click', function() {
+            var productId = image.getAttribute('data-id');
+            var xhr = new XMLHttpRequest();
+            var url = '/edu/basket?product-id=' + productId;
+            xhr.open('GET', url);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    // 선택한 상품 리스트 출력하기
+                    basket = response;
+                    updateBasket();
+                } else {
+                    console.error('Error:', xhr.statusText);
+                }
+            };
+            xhr.send();
+        });
+    });
+
+    function updateBasket() {
+        basketList.innerHTML = '<h3>선택한 상품 리스트</h3>';
+        for (const productId in basket) {
+            const quantity = basket[productId];
+            const listItem = document.createElement('li');
+            listItem.textContent = `${productId} 상품 ${quantity}개`;
+            basketList.appendChild(listItem);
+        }
+        basketList.innerHTML += '<h3 id = "clear-btn">상품비우기</h3>';
+        const clearBtn = document.getElementById("clear-btn");
+        clearBtn.addEventListener('click',clearBasket);
+    }
+
+    function clearBasket() {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', '/edu/basket');
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            basketList.innerText = response["msg"];
+        } else {
+            alert('상품 비우기에 실패하였습니다.');
+        }
+    };
+    xhr.send();
+}
+
+</script>
+</body>
+</html>
