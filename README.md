@@ -125,3 +125,15 @@ IDE
 |3일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day3)             | Servlet Container, 상태 정보 유지 기술(Cookie, Session) | [실습(소스35.zip)](https://github.com/cofreeman/kosa/blob/main/src/week6/day3)                     |
 |4일차| [MVC 패턴 기반의 Servlet&JSP&JDBC &Junit5](https://github.com/cofreeman/kosa/tree/main/src/week6/day4)             | JSP                                             | [실습(소스36.zip)](https://github.com/cofreeman/kosa/blob/main/src/week6/day4)                     |
 |5일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week6/day5)                                    | JSP, Servlet Context, MVC 패턴                    | [실습(소스37.zip)](https://github.com/cofreeman/kosa/blob/main/src/week6/day5)                     |
+
+# 6주차
+
+---
+
+|일차| 아이템                                                                        | learnd                                                           | 실습                                                                                             |
+|-----|----------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+|1일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day1) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day1) |
+|2일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day2) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day2) |
+|3일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day3) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day3) |
+|4일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day4) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day4) |
+|5일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day5) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day5) |
