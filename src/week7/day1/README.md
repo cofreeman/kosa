@@ -58,6 +58,78 @@ BeforeAll 과 AfterAll 은 항상 static 으로 정의되어야한다.
 |assertTimeout|테스트가 지정한 시간보다 오래 걸리지 않으면 True 지정한 시간보다 오래 걸려도 테스트가 끝날 때까지 대기|
 |assertTimeoutPreemptively|테스트가 지정한 시간보다 오래 걸리지 않으면 True 지정한 시간보다 오래 걸린 경우 바로 테스트 종류|
 
+
+# 스프링 프레임워크
+> 스프링 프레임워크는 자바 기반의 애플리케이션 프레임워크로 엔터프라이즈급 애플리케이션을 개발하기 위한 다양한 기능을 제공하는 프레임워크다.
+
+## 특징
+1. 제어의 역전(IOC)
+2. 의존성주입(DI)
+3. 관점 지향 프로그래밍(AOP-Aspect Oriented Programming)
+
+# 제어의 역전(IOC)
+> 객체 생성과 의존성 주입을 컨테이너가 수행하도록 하는 프로그래밍 원칙입니다.
+
+## IOC 의 장점
+IOC를 사용하면, 개발자는 컨테이너에게 필요한 객체를 요청하고, 컨테이너는 이를 생성하고 필요한 의존성을 자동으로 주입합니다. 
+이를 통해 객체 간의 결합도를 낮출 수 있고, 유연하고 재사용성이 높은 코드를 작성할 수 있습니다.
+
+## 예시
+case 1. IOC 를 적용하지 않은 예시
+```java
+public class UserService {
+    private UserDao userDao;
+    
+    public UserService() {
+        userDao = new UserDao();
+    }
+    
+    public User getUserById(int id) {
+        return userDao.getUserById(id);
+    }
+}
+```
+case 1에서 UserService가 UserDao에 직접 의존하고 있습니다.<br> 
+UserService 내부에서 UserDao의 객체를 생성하고 사용하고 있습니다.<br>
+이 방식은 결합도가 높아지며, UserDao를 변경해야할 경우 UserService도 함께 변경되어야 합니다.<br>
+
+case 2. IOC 를 적용한 예시
+```java
+public class UserService {
+    private UserDao userDao;
+
+    public UserService(UserDao userDao) {
+        this.userDao = userDao;
+    }
+
+    public User getUserById(int id) {
+        return userDao.getUserById(id);
+    }
+}
+```
+case 2에서 UserService가 UserDao에 의존하지 않고, 생성자를 통해 UserDao 객체를 주입받도록 변경되었습니다.<br> 
+이를 통해 UserDao의 변경이 UserService에 영향을 미치지 않으며, 유연한 코드를 작성할 수 있습니다.<br>
+또한, 위 코드에서는 UserService 생성 시점에 UserDao 객체를 주입받고 있기 때문에 DI (Dependency Injection)을 구현하고 있는 것입니다.<br> 
+이를 통해 UserDao를 외부에서 주입받도록 함으로써 객체의 결합도를 낮출 수 있습니다.<br>
+
+# 의존성 주입(DI Dependency Injection)
+> 객체 지향 프로그래밍에서 객체가 직접 필요한 의존성을 생성하지 않고, 외부에서 주입받는 방식을 사용하는 프로그래밍 방식입니다.
+
+# DI 특징
+DI는 객체가 다른 객체에 대한 의존성을 자신이 아닌 외부에서 주입받도록 하는 것입니다. 
+이를 통해 객체 간의 결합도를 낮출 수 있으며, 코드의 유지보수성과 재사용성을 높일 수 있습니다.
+IOC 원칙을 구현하는 방법 중 하나이고 case 2 에서 UserDao 객체가 UserService 객체에 주입되고 이것을 (컨테이너에 의한)의존성 주입 즉, DI 라고 합니다.
+
+# DI 방법
+1. Construction Injection : 생성자를 통해서 객체 바인딩(의존관계를 연결)
+2. Setter Injection : setter 메서드를 이용해서 객체 바인딩(의존관계를 연결)
+3. method Injection : 어노테이션을 정의한 메서드를 이용해서 객체 바인딩(의존관계를 연결)
+4. field Injection : 어노테이션을 정의한 메서드를 이용해서 객체 바인딩(의존관계를 연결)
+
+
+
+
+
 ????
 요청이 Filter 를 거치는 과정
 Filter가 특정 요청만 처리하게 하는 방법
