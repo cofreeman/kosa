@@ -17,8 +17,7 @@ FileInputStream, FileOutputStream, ObjectInputStream, ObjectOutputStream, 그 �
 직렬화 하고 싶지 않은 멤버 변수에 transient 키워드를 붙히면 해당 변수는 직렬화에서 제외된다.
 그렇다면 역직렬화 시에 transient 변수는 어떻게 주입되는가? 리플렉션? 아니면 컴파일러가 transient 변수를 제외한 생성자를 만들어주는가?
 둘 다 아니다.
-
-???????????????????????
+역직렬화 시에 transient 에는 값이 주입되지 않으며 기본 값이 할당됩니다.
 
 ## 객체 직렬화시에 정리
 1. Serializable 상속 
