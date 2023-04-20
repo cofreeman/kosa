@@ -77,10 +77,6 @@ window.localStorage 와 window.sessionStorage 의 주요 멤버는 다음과 같
 Same Origin Policy(동일 출처 정책)은 웹 보안의 기본 원칙 중 하나로, 웹 브라우저가 다른 출처의 리소스에 대한 액세스를 제한하는 정책입니다.<br> 
 이 정책은 웹 애플리케이션에서 발생할 수 있는 보안 문제를 방지하려는 목적으로 존재합니다.<br>
 
-다음은 Same Origin Policy를 적용하지 않았을때 나타나는 보안 문제를 보여주는 코드입니다.
-```js
-
-```
 동일 출처 정책에 따라, 웹 페이지에서 실행되는 스크립트는 동일한 출처(origin)에서 로드된 리소스에만 액세스할 수 있습니다.<br> 
 출처는 URL의 프로토콜(scheme), 호스트명(host), 포트번호(port)의 조합으로 결정됩니다.<br>
 예를 들어, 동일 출처 정책이 적용되면 http://example.com/app 페이지에서 로드된 스크립트는 http://example.com/data 에 있는 데이터에 액세스할 수 있지만,<br>
