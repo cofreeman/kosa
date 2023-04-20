@@ -11,12 +11,33 @@
 7. XML 변환
 
 ## Filter 특징
-Filter는 javax.servlet.Filter 인터페이스를 구현하여 작성한다.ㅡ
+Filter는 javax.servlet.Filter 인터페이스를 구현하여 작성한다.
 
 ## 요청이 Filter 를 거치는 과정
-
+1. 클라이언트가 서버에 요청을 한다.
+2. 서버는 요청을 처리하기 전에 필터를 적용합니다. 
+3. 웹 서버가 필터를 요청에 적용합니다.(필터는 web.xml 파일이나 @WebFilter 애너테이션을 통해 정의됩니다.)
+4. 요청에 필터를 적용하여 알맞게 변환한 후 다시 요청을 처리한다. 
 ## Filter 객체 구현과정
+```java
+@WebFilter(dispatcherTypes = {DispatcherType.REQUEST}, urlPatterns = {"/*"})
+// 특정 요청 타입과 url에 Filter를 적용합니다. 
+public class HangulFilter implements Filter {
+// Filter를 상속받은 class 를 구현합니다.
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+    // 추상메서드인 doFilter 메서드를 구현합니다.
+    //request와 response는 각각 요청과 응답이며 FilterChain은 ~입니다.
+        HttpServletRequest req = (HttpServletRequest) request;
+        if (req.getMethod().equals("POST")) {
+            request.setCharacterEncoding("utf-8");
+        }
+        chain.doFilter(request, response);
+        // FilterChain 의 doFilter 를 통해 ~
+    }
+}
+```
 
+---
 # JUnit
 > 단위 테스트를 위한 테스트 프레임워크 
 
@@ -131,11 +152,8 @@ IOC 원칙을 구현하는 방법 중 하나이고 case 2 에서 UserDao 객체�
 
 
 ????
-요청이 Filter 를 거치는 과정
-Filter가 특정 요청만 처리하게 하는 방법
 doFilter 메서드는 뭔가
 doFilter메서드의 매개변수 FilterChain 에는 무엇이 주입되나 -> 다음 요청을 수행할 객체(필터 또는 서블릿)? -> 아니다 
 FilterChain 인터페이스에는 별 내용이 없는데 어떻게 다음 요청을 수행할 객체를 찾지?
 프레임워크가 요청에 대한 요청처리과정을 컴파일 시점에 정해놓나?
-서블릿 컨테이너에 의해서 관리되나? 내생각에는 요청 -> 서블렛 컨테이너 -> 알맞은 필터 매핑 -> 필터링 거친 요청을 다시 서블릿 객체로 전달
 ????
