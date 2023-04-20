@@ -1,4 +1,4 @@
-#JSP(Java Server Page)
+# JSP(Java Server Page)
 > JSP는 HTML 코드 안에 Java 코드를 포함시켜 동적인 웹 페이지를 생성하는 기술입니다.
 
 ## 특징
