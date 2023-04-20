@@ -130,10 +130,10 @@ IDE
 
 ---
 
-|일차| 아이템                                                                        | learnd                                                           | 실습                                                                                             |
-|-----|----------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-|1일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day1) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day1) |
-|2일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day2) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day2) |
-|3일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day3) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day3) |
-|4일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day4) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day4) |
-|5일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day5) || [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day5) |
+|일차| 아이템                                                                        | learnd                                                                                                                                                  | 실습                                                                                             |
+|-----|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+|1일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day1) | Filter, JUnit, Assertion, Spring Framework(IoC, DI)                                                                                                     | [실습](https://github.com/cofreeman/kosa/blob/main/src/week7/day1) |
+|2일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day2) | 휴강                                                                                                                                                      | 휴강                                                               |
+|3일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day3) | 휴강                                                                                                                                                      | 휴강                                                               |
+|4일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day4) | Spring Bean(XML 등록,Annotation 등록)                                                                                                                       | [실습1(소스38.zip)](https://github.com/cofreeman/kosa/blob/main/src/week7/day5) [실습2(소스39.zip)](https://github.com/cofreeman/kosa/blob/main/src/week7/day5) |
+|5일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week7/day5) |||
