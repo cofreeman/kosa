@@ -94,6 +94,10 @@ Spring Boot는 이러한 문제를 해결하기 위해 자동 구성, 스타터 
 ```html
 <h2>반갑다~~ [[${data}]]</h2>
 <h2>잘 해보자~~<span th:text="${data}">뭐라두!!</span></h2>
+
+<ul>
+  <li th:each="ele : ${array}" th:text="${ele}"></li>
+</ul>
 ```
 ????
 
