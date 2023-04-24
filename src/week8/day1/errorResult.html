@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>요청을 처리하는 동안 오류가 발생했어요..</h2>
+<hr/>
+<text th:text="'오류의 원인 : ' + ${result}"/>
+<hr/>
+<a th:href='${ #request.getHeader("referer") }'>입력화면</a>
+</body>
+</html>
