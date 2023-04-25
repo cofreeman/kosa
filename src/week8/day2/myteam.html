@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // "우리 팀명" 버튼 클릭 시 이벤트 핸들러
+      $("#team-name-btn").click(function() {
+        $.ajax({
+          url: "/myTeam",
+          type: "GET",
+          success: function(data) {
+            // JSON 데이터에서 팀명만 추출하여 출력
+            $("#result").text("우리 팀의 팀명은" + data.teamName + " 입니다.");
+          }
+        });
+      });
+
+      // "우리 팀원" 버튼 클릭 시 이벤트 핸들러
+      $("#team-member-btn").click(function() {
+        $.ajax({
+          url: "/myTeam",
+          type: "GET",
+          success: function(data) {
+            // JSON 데이터에서 팀 정보 추출하여 출력
+            var info = "<ul>";
+            for (var i = 0; i < data.teamMember.length; i++) {
+              var member = data.teamMember[i];
+              info += "<li>" + member.name + " : 별명은 " + member.nickName + "이고 좋아하는 음식은 " + member.food + "입니다.</li>";
+            }
+            info += "</ul>";
+            $("#result").html(info);
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+<h1>우리팀 소개</h1>
+<hr>
+<button id="team-name-btn">우리 팀명</button>
+<button id="team-member-btn">우리 팀원</button>
+<div id="result"></div>
+</body>
+</html>

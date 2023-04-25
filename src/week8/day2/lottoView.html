@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>로또 결과</h1>
+<hr>
+<text th:utext="${result.result}"/>
+<br>
+<img th:src="${result.imgName}"/>
+<hr>
+<a th:if="${ result.lottoNum != session.winNum && result.lottoNum != null}" th:href='${ #request.getHeader("referer") }' th:text="재시도...."></a>
+</body>
+</html>

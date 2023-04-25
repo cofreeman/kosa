@@ -142,11 +142,10 @@ IDE
 
 ---
 
-|일차| 아이템                                                                        | learnd                                                                     | 실습                                                                                                                                                      |
-|-----|----------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-|1일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day1) || [실습(소스41.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day1) |
-
-[//]: # (|2일차| [Spring FW 기초]&#40;https://github.com/cofreeman/kosa/tree/main/src/week8/day2&#41; || [실습]&#40;https://github.com/cofreeman/kosa/blob/main/src/week8/day2&#41; |)
+|일차| 아이템                                                                        | learnd                                                                                                                                                  | 실습                                                                                                                                                      |
+|-----|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day1) || [실습(소스41.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day1)                                                                              |
+|2일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day2) || [실습1(소스42.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day2) [실습2(소스43.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day2) |
 
 [//]: # (|3일차| [Spring FW 기초]&#40;https://github.com/cofreeman/kosa/tree/main/src/week8/day3&#41; || [실습]&#40;https://github.com/cofreeman/kosa/blob/main/src/week8/day3&#41; |)
 
