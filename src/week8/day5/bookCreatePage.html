@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div th:if="${list == null}">
+<h3>도서 정보 입력</h3>
+<hr>
+  <form action="/bookCreate" method="post">
+    <label for="title">도서명:</label>
+    <input type="text" id="title" name="title" required/><br><br>
+
+    <label for="price">가격:</label>
+    <input type="text" id="price" name="price" required/><br><br>
+
+    <label for="kind">분류정보:</label>
+    <select id="kind" name="kind">
+      <option value="b01">프로그래밍 언어</option>
+      <option value="b02">웹 프로그래밍</option>
+      <option value="b03">빅 데이터</option>
+      <option value="b04">데이터베이스</option>
+      <option value="b05">인프라</option>
+    </select>
+
+    <input type="submit" value="제출"/>
+  </form>
+</div>
+<div th:unless="${bookDTO == null}">
+  <h3>입력된 도서 정보</h3>
+  <hr>
+  <text th:text="${bookDTO.toString}">Thymeleaf</text>
+  <form action="/bookinfo/b1" method="GET">
+    <button type="submit">전체 리스트 보기</button>
+  </form>
+</div>
+</body>
+</html>

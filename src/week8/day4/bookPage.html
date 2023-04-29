@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2> 책 정보 출력</h2>
+<br>
+<hr>
+<form action="/bookinfo/b1" method="GET">
+  <button type="submit">모든 도서</button>
+</form>
+<form action="/bookinfo/b2" method="GET">
+  <button type="submit">가격이 높은 순으로</button>
+</form>
+<form action="/bookinfo/b3" method="GET">
+  <button type="submit">가격이 20000원 보다 높은 도서</button>
+</form>
+<form action="/bookinfo/b4" method="GET">
+  <button type="submit">웹 프로그래밍 도서</button>
+</form>
+<form action="/bookinfo/b5" method="GET">
+  <button type="submit">데이터베이스와 인프라 도서</button>
+</form>
+<form action="/bookinfo/b6" method="GET">
+  <input type="hidden" value="자바" name="name">
+  <button type="submit">도서명에 자바를 포함하는 도서</button>
+</form>
+<form action="/bookinfo/b6" method="GET">
+  <input type="hidden" value="스프링" name="name">
+  <button type="submit">도서명에 스프링를 포함하는 도서</button>
+</form>
+<form action="/bookinfo/b7" method="GET">
+  <button type="submit">분류별 도서 가격의 평균</button>
+</form>
+<hr>
+<ul th:each="elem : ${list}">
+  <li th:utext="${elem.toString}">Thymeleaf</li>
+</ul>
+</body>
+</html>
