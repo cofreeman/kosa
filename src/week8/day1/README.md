@@ -150,7 +150,17 @@ public class UserController {
 }
 ````
 
-5. @RequestBody
+5. @RequestHeader
+@RequestHeader는 요청 헤더의 값을 추출하기 위해 사용되는 스프링 MVC의 어노테이션입니다. 특정 헤더의 값을 메서드 파라미터로 바인딩할 수 있습니다
+```java
+@GetMapping("/example")
+public void handleRequest(@RequestHeader("User-Agent") String userAgent) {
+    // User-Agent 헤더의 값을 추출하여 사용
+}
+
+```
+
+6. @RequestBody
 @RequestBody 어노테이션은 요청(Request) 본문을 객체로 변환하여 매개변수로 받아올 때 사용됩니다.
 따라서 Get 방식에서는 지원을 하지 않습니다.
 ```java
@@ -162,7 +172,7 @@ public ResponseEntity<?> createUser(@RequestBody User user) {
 }
 ```
 
-6. Model, ModelMap, ModelAndView
+7. Model, ModelMap, ModelAndView
 Model, ModelMap, ModelAndView는 View에서 사용할 데이터를 저장하는 객체입니다.
 이러한 객체를 매개변수로 받아와서 컨트롤러 메소드에서 데이터를 추가하거나 수정할 수 있습니다.
 ```java
@@ -196,7 +206,7 @@ public ModelAndView example() {
     }
 ```
 
-7. ModelAttribute
+8. ModelAttribute
 @ModelAttribute 어노테이션은 요청(Request) 매개변수의 값을 객체로 받아오는 방법 중 하나입니다.
 또한 ModelAttribute 로 전달받은 객체는 자동으로 Model 객체 안에 추가됩니다.
 예를 들어 다음과 같은 코드에서 kkk 라는 이름의 StepVo 객체가 모델에 추가됩니다.
@@ -224,7 +234,29 @@ public String save(@ModelAttribute User user) {
 }
 ```
 
+9. @CookieValue
+@CookieValue 는 쿠키의 값을 추출하기 위해 사용되는 스프링 MVC의 어노테이션입니다. 특정 쿠키의 값을 메서드 파라미터로 바인딩할 수 있습니다
+`````java
+@GetMapping("/example")
+public void handleRequest(@CookieValue("sessionId") String sessionId) {
+    // sessionId 쿠키의 값을 추출하여 사용
+}
 
-?????
-스프링부트교안 19페이지 정리
-?????
+`````
+10. Errors, BindingResult
+Errors와 BindingResult는 스프링 MVC에서 데이터 바인딩과 유효성 검증을 수행할 때 사용되는 객체입니다. 이들은 주로 폼 처리와 관련하여 사용됩니다.
+`````java
+@PostMapping("/submitForm")
+public String submitForm(@Validated FormDto formDto, BindingResult bindingResult) {
+    if (bindingResult.hasErrors()) {
+        // 유효성 검증 오류가 발생한 경우 처리
+        List<ObjectError> errors = bindingResult.getAllErrors();
+        for (ObjectError error : errors) {
+            System.out.println(error.getDefaultMessage());
+        }
+        return "error-page";
+    }
+    // 폼 데이터가 유효한 경우 처리
+    return "success-page";
+}
+`````
