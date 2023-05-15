@@ -155,10 +155,10 @@ IDE
 
 ---
 
-|일차| 아이템                                                                         | learnd                                                  | 실습                                                                                                                                                     |
-|-----|-----------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|1일차| [프로젝트]                                                                      ||                                                         |
-|2일차| [프로젝트]                                                                      |||
-|3일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day3) | Logging(Log level,log setting)                          ||
-|4일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day4) | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 ||
+|일차| 아이템                                                                         | learnd                                                  | 실습                                                                          |
+|-----|-----------------------------------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------------|
+|1일차| [프로젝트]                                                                      | x                                                       | x                                                       |
+|2일차| [프로젝트]                                                                      | x                                                       | x                                                       |
+|3일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day3) | Logging(Log level,log setting)                          | x                                                                           |
+|4일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day4) | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 | x                                                                           |
 |5일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day5) | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습(소스46.zip)](https://github.com/cofreeman/kosa/blob/main/src/week10/day5) |
