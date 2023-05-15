@@ -109,3 +109,66 @@ Spring은 "규모에 따라 적용"이라는 철학을 가지고 있습니다.<b
 2. 생명주기 관리: 스프링은 빈의 생명주기를 관리합니다. 빈으로 등록되면 스프링이 해당 객체의 생성과 소멸을 관리하며, 필요에 따라 빈의 스코프를 지정하여 사용할 수 있습니다.
 3. 설정과 통합: 스프링 설정을 통해 필터의 순서나 활성화 조건 등을 편리하게 관리할 수 있습니다. 또한, 스프링 시큐리티와 같은 스프링의 다른 기능과 통합하여 사용할 수 있습니다.
 따라서, 필터를 빈으로 등록하면 스프링 프레임워크의 다양한 기능을 활용하여 필터를 효율적으로 관리할 수 있습니다.
+
+# 웹 소켓
+> HTTP 환경에서 클라이언트와 서버 사이에 하나의 TCP 연결을 통해 실시간으로 전이중 통신을 가능하게 하는 프로토콜
+## 특징
+실시간 알림, 실시간 채팅 등 실시간이라는 키워드가 들어가는 기능들을 위해서는 대부분 웹 소켓 기술이 필요하다.
+
+## 웹 소켓 라이프 사이클
+![img.png](img.png)
+
+## 웹 소켓 서버 구(Spring Boot WebSocket)
+스프링(Spring)은 웹소켓(WebSocket)을 지원하는 기능을 제공하며, 스프링 웹소켓 서버를 구현하는 과정은 다음과 같습니다:
+
+1. 의존성 추가: 스프링 웹소켓을 사용하기 위해 프로젝트의 의존성에 spring-boot-starter-websocket을 추가해야 합니다. 이를 위해 Maven 또는 Gradle을 사용할 수 있습니다.
+2. WebSocket 구성: 스프링에서 웹소켓을 사용하려면 WebSocket 구성이 필요합니다. 구성은 @EnableWebSocket 어노테이션을 사용하여 활성화될 수 있습니다. 일반적으로 구성 클래스에 @Configuration 어노테이션을 추가하여 구성을 정의합니다.
+3. WebSocketHandler 구현: WebSocketHandler 인터페이스를 구현하여 웹소켓 요청을 처리할 핸들러를 작성해야 합니다. 이 핸들러는 클라이언트와의 연결, 메시지 수신 및 전송 등의 작업을 처리합니다.
+4. WebSocketHandlerRegistry 등록: WebSocketHandlerRegistry를 사용하여 WebSocketHandler를 등록해야 합니다. 등록된 핸들러는 클라이언트의 웹소켓 요청과 관련된 URL에 대해 호출됩니다. 등록은 registerHandler() 메서드를 사용하여 수행할 수 있습니다.
+5. 웹소켓 엔드포인트 설정: 웹소켓 요청을 처리할 엔드포인트를 설정해야 합니다. 스프링에서는 WebSocketConfigurer 인터페이스를 구현하여 엔드포인트를 설정할 수 있습니다. 이를 통해 WebSocket의 엔드포인트 URL과 WebSocketHandler를 매핑합니다.
+6. 웹소켓 클라이언트와의 통신: 클라이언트와의 웹소켓 통신을 위해 필요한 작업을 수행해야 합니다. 이는 주로 JavaScript를 사용하여 클라이언트 측에서 처리됩니다. 클라이언트는 웹소켓을 사용하여 서버와 연결하고, 메시지를 주고받을 수 있습니다.
+
+## 스프링의 예외 처리
+스프링에서는 컨트롤러에서 발생하는 예외를 @ControllerAdvice 를 사용해서 처리할 수 있는데
+@ControllerAdvice는 스프링 프레임워크에서 예외 처리를 일괄적으로 처리하기 위해 사용되는 어노테이션입니다.
+@ControllerAdvice를 사용하면 여러 컨트롤러에서 발생하는 예외를 한 곳에서 처리할 수 있으며, 공통된 예외 처리 로직을 중복 없이 구현할 수 있습니다.
+
+## @ControllerAdvice와 @ExceptionHandler를 이용하여 예외를 처리하는 방법
+
+1. @ControllerAdvice 어노테이션을 사용하여 예외 처리 클래스를 작성합니다. 일반적으로 클래스에 @ControllerAdvice 어노테이션을 추가하여 해당 클래스가 예외 처리를 담당하는 클래스임을 나타냅니다.
+2. @ExceptionHandler 어노테이션을 사용하여 특정 예외에 대한 처리 메서드를 작성합니다. 예외 처리 메서드는 @ExceptionHandler 어노테이션과 함께 특정 예외 타입을 매개변수로 받아와 해당 예외를 처리하는 로직을 구현합니다.
+3. 예외 처리 메서드 내에서 필요한 예외 처리 로직을 구현합니다. 예를 들어, 예외 정보를 로깅하거나 사용자에게 오류 메시지를 반환하는 등의 작업을 수행할 수 있습니다.
+4. @ControllerAdvice 클래스에 @ExceptionHandler를 사용하여 정의한 예외 처리 메서드를 추가합니다. 이렇게 함으로써 해당 예외 타입이 발생했을 때 예외 처리 메서드가 실행되어 예외를 처리합니다.
+
+## 예시
+```java
+@ControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<String> handleException(Exception ex) {
+        // 예외 처리 로직
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal Server Error");
+    }
+
+    @ExceptionHandler(UserNotFoundException.class)
+    public ResponseEntity<String> handleUserNotFoundException(UserNotFoundException ex) {
+        // 예외 처리 로직
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User Not Found");
+    }
+
+    // 추가적인 예외 처리 메서드 작성 가능
+}
+
+
+@RestController
+public class UserController {
+
+    @GetMapping("/users/{id}")
+    public ResponseEntity<String> getUser(@PathVariable("id") Long id) {
+        // 예외 발생 예시
+        throw new UserNotFoundException("User not found");
+    }
+}
+
+```
