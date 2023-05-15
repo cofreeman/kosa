@@ -162,3 +162,19 @@ IDE
 |3일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day3) | Logging(Log level,log setting)                          | x                                                                           |
 |4일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day4) | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 | x                                                                           |
 |5일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day5) | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습(소스46.zip)](https://github.com/cofreeman/kosa/blob/main/src/week10/day5) |
+
+# 10주차
+
+---
+
+|일차| 아이템                                                                         | learnd     | 실습                                                                          |
+|-----|-----------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------|
+|1일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day1) | Spring JPA | [실습(소스47.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day1) |
+
+[//]: # (|2일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day2&#41; | x                                                       | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                       |)
+
+[//]: # (|3일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day3&#41; | Logging&#40;Log level,log setting&#41;                          | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+
+[//]: # (|4일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day4&#41; | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+
+[//]: # (|5일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day5&#41; | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41; |)
