@@ -149,3 +149,16 @@ IDE
 |3일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day3) | MultipartUpload                                                                         | [실습(StudyPathController)](https://github.com/cofreeman/kosa/blob/main/src/week8/day3)                                                                        |
 |4일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day4) | MyBatis, MVC의 Annotation(Controller,Service,Repository의 역할과 특별 기능),                     | [실습(소스44.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day4)                                                                               |
 |5일차| [Spring FW 기초](https://github.com/cofreeman/kosa/tree/main/src/week8/day5) | MyBatis, Log                                                                            | [실습1(소스45.zip)](https://github.com/cofreeman/kosa/blob/main/src/week8/day5) [실습2(BookMapperDAO)](https://github.com/cofreeman/kosa/blob/main/src/week8/day5) |
+
+
+# 9주차
+
+---
+
+|일차| 아이템                                                                         | learnd                                                  | 실습                                                                                                                                                     |
+|-----|-----------------------------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+|1일차| [프로젝트]                                                                      ||                                                         |
+|2일차| [프로젝트]                                                                      |||
+|3일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day3) | Logging(Log level,log setting)                          ||
+|4일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day4) | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 ||
+|5일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week10/day5) | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습(소스46.zip)](https://github.com/cofreeman/kosa/blob/main/src/week10/day5) |
