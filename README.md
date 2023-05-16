@@ -1,7 +1,5 @@
 
 # DKTechIn 채용확정형 교육과정(23.02.28 ~23.07.29)
-[![img.png](img.png)](https://dktechin.com/service/main/index)
-
 ---
 **This repository covers the content of the class, the knowledge gained, and the projects i have undertaken.**
 
