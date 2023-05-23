@@ -75,8 +75,8 @@ EntityManagerFactory와 EntityManager는 JPA에서 데이터베이스와의 상�
 ## 영속성 컨텍스트와 CRUD 
 
 ### Create
-어플리케이션에서 어떤 객체를 생성하여 jpa 를 사용해서 DB 에 저장하면 1차적으로 영속성 컨테그슽에 저장하고 쿼리문을 만들어서 쓰기지연 저장소에 저장한다.
-이 때 entitymanager 를 이용하여 flush 를 호출하거나 트랜잭션이 끝나서 커밋을 요청하기전에 자동 flush 를 이용하거나 JPQL 사용을 해서 자동 flush 를 하면 DB 에 반영된다.
+객체를 생성하여 save 메서드를 호출하면 1차 캐시에 pk값을 0 또는 null 을 저장한 후 sql 쓰기지연 저장소에 insert 쿼리를 저장한다. 실제로는 DB 와 상호작용을 하지 않는다.
+이후 entitymanager 를 이용하여 flush 를 호출하거나 트랜잭션이 끝나서 커밋을 요청하기전에 자동 flush 를 이용하거나 JPQL 사용을 해서 자동 flush 를 하면 DB 에 반영된다.
 
 ### Read
 엔티티를 조회할 떄 1차 캐시를 조회한 후 엔티티가 있으면 가져오고 없으면 db를 조회해서 엔티티를 가져온다.
