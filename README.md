@@ -165,14 +165,26 @@ IDE
 
 ---
 
-|일차| 아이템                                                                         | learnd     | 실습                                                                          |
-|-----|-----------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------|
-|1일차| [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day1) | Spring JPA | [실습(소스47.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day1) |
+| 일차  | 아이템                                                                         | learnd          | 실습                                                                          |
+|-----|-----------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------|
+| 1일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day1) | Spring JPA      | [실습(소스47.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day1) |
+| 2일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day2) | Entity, 연관관계 매핑 | [실습1(소스48.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day2) [실습2(소스49.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day2) |
+| 3일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day3) | Spring Data JPA | [실습(소스50.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day3) |
+| 4일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day4) | RestAPI         | x                                                                           |
+| 5일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day5) | ResponseEntity  | [실습(소스51.zip)](https://github.com/cofreeman/kosa/blob/main/src/week11/day5) |
+| 6일차 | [Spring FW 심화](https://github.com/cofreeman/kosa/tree/main/src/week11/day6) | HATEOAS         | x               |
 
-[//]: # (|2일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day2&#41; | x                                                       | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                       |)
+# 11주차
 
-[//]: # (|3일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day3&#41; | Logging&#40;Log level,log setting&#41;                          | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+---
 
-[//]: # (|4일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day4&#41; | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+| 일차  | 아이템                                                                     | learnd                | 실습                                                                                                                                                        |
+|-----|-------------------------------------------------------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1일차 | [Vue.js 3](https://github.com/cofreeman/kosa/tree/main/src/week12/day1) | ECMAScript6, CSR, SSR |                                                                                                                                                           |
+| 2일차 | [Vue.js 3](https://github.com/cofreeman/kosa/tree/main/src/week12/day2) | vue3 문법               | [실습1(소스53.zip)](https://github.com/cofreeman/kosa/blob/main/src/week12/day2) [실습2(소스54.zip)](https://github.com/cofreeman/kosa/blob/main/src/week12/day2) |
 
-[//]: # (|5일차| [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day5&#41; | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41; |)
+[//]: # (| 3일차 | [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day3&#41; | Logging&#40;Log level,log setting&#41;                          | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+
+[//]: # (| 4일차 | [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day4&#41; | Scheduling, Filter, Intercepter, Spring WebSocket, 예외처리 | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41;                                                                           |)
+
+[//]: # (| 5일차 | [Spring FW 심화]&#40;https://github.com/cofreeman/kosa/tree/main/src/week11/day5&#41; | Aspectj, Spring AOP, AOP 의 Proxy                        | [실습&#40;소스46.zip&#41;]&#40;https://github.com/cofreeman/kosa/blob/main/src/week10/day5&#41; |)
