@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Vue.js sample</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<style>
+		*{
+			text-align: center;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div id = "app">
+	<h2>Google Charts의 바그래프에 버튼으로 투표</h2>
+	<h4>선호하는 점심 메뉴 튜표</h4>
+	<div id="chart_div" style="height: 400px;"></div>
+
+	<span v-for="(item,c) in menuArr">{{item[0]}} : {{item[1]}}
+		<button @click="vote('add',c)">한표 더하기</button>
+		<button @click="vote('minus',c)">한표 빼기</button>
+	</span>
+	</div>
+<script>
+	var orgArr =[
+								['엄마손집밥', 0],
+								['밥향기', 0], 
+								['명화당', 0],
+								['더뭉티기', 0], 
+								['토담', 0], 
+								['시골마당', 0]
+					];
+	google.charts.load('current', { packages: ['corechart'] });
+	google.charts.setOnLoadCallback(drawBasic);
+
+		function drawBasic() {
+			let data = new google.visualization.DataTable();
+			data.addColumn('string', '종류');
+			data.addColumn('number', '갯수');
+			data.addRows(orgArr);
+			var options = { title: '선호하는 점심', "is3D": true };
+			var chart = new google.visualization.BarChart(
+				document.getElementById('chart_div'));
+			chart.draw(data, options);
+		}
+</script>
+<script>
+	const {createApp} = Vue;
+
+	createApp({
+		data(){
+			return {
+					menuArr: orgArr,
+					count:0
+			}
+		},
+		methods:{
+			vote: function(oper,index){
+				if(oper === "add"){
+					this.menuArr[index][1]++;
+				}else if (oper === "minus"){
+					console.log("여기");
+					this.count = this.menuArr[index][1];
+					if (this.count > 0){
+						this.menuArr[index][1]--;
+					}
+				}
+				drawBasic();
+			},
+		}
+	}).mount('#app');
+</script>
+</body>
+</html>
